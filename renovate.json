@@ -4,5 +4,9 @@
   ],
   "gomod": {
     "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"]
-  }
+  },
+  "packageRules": [{
+    "matchManagers": ["gomod"],
+    "constraints": { "go": "1.15" }
+  }]
 }
