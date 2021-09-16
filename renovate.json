@@ -3,5 +3,8 @@
   "extends": ["config:base"],
   "docker": {
     "pinDigests": true
+  },
+    "droneci": {
+    "enabled": false
   }
 }
