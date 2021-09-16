@@ -1,10 +1,10 @@
 ---
 kind: pipeline
-name: test-arm
+name: test
 
 platform:
   os: linux
-  arch: arm
+  arch: amd64
 
 steps:
 - name: test
@@ -14,7 +14,7 @@ steps:
 
 trigger:
   ref:
-  - refs/heads/main
+  - refs/heads/master
   - refs/tags/**
 
 ...

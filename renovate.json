@@ -1,8 +1,10 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "gomod": {
-    "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "docker": {
+    "pinDigests": true
+  },
+  "droneci": {
+    "enabled": false
   }
 }
